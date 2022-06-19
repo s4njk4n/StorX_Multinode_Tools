@@ -76,9 +76,8 @@ in your terminal window to see the current status that each node is showing.
     chmod +x *.sh
 ```
 
----
 
-### CUSTOMISE THE "ipaddresses" FILE
+#### CUSTOMISE THE "ipaddresses" FILE
 
 1. Open the "ipaddresses" file in nano:
 
@@ -98,14 +97,13 @@ in your terminal window to see the current status that each node is showing.
     Press "ENTER"
 ```
 
----
 
-### TO SETUP SSH KEY-BASED AUTHENTICATION
+#### TO SETUP SSH KEY-BASED AUTHENTICATION
 
 (Note: You must have setup the "ipaddresses" file in the above section first)
 
 
-#### GENERATE SSH-KEYS 
+##### GENERATE SSH-KEYS 
 
 1. Create your SSH keys that will be used for authentication:
 
@@ -117,7 +115,7 @@ in your terminal window to see the current status that each node is showing.
    arrive back at your normal command prompt.
 
 
-#### REGISTER SSH-KEYS ON NODES
+##### REGISTER SSH-KEYS ON NODES
 
 1. Run the set_StorX_SSH_auth.sh script:
 
