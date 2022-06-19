@@ -19,7 +19,7 @@ Also, please do not be afraid of any jargon. The process of using the scripts wi
 
 ---
 
-### WHAT THE SCRIPTS DO:
+### WHAT THE SCRIPTS DO
 
 
 _set_StorX_SSH_auth.sh_
@@ -49,7 +49,7 @@ in your terminal window to see the current status that each node is showing.
 
 ---
 
-### ITEMS TO NOTE:
+### ITEMS TO NOTE
 
 * These scripts do not run directly on any of your node VPS's. You will need an additional computer (running Ubuntu 20.04) that these scripts will be
   installed on (eg. laptop, desktop, virtual machine, VPS).
