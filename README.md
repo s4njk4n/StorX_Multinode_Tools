@@ -54,7 +54,9 @@ INITIAL SETUP
 
 2. Update the system and install base packages:
 
+```
     sudo apt update -y && sudo apt upgrade -y && sudo apt install -y git ssh && sudo apt autoremove -y
+```
 
 3. Clone the scripts repository:
 
