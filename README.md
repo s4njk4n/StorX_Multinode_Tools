@@ -154,7 +154,7 @@ in your terminal window to see the current status that each node is showing.
    VERY SLOOOOOOW. If you're not sure how long it takes for yours or if you want to be on the safe side then just pick something long like
    300 seconds (ie. type 300 and press ENTER)
 
-4. Now sit back and wait. Feel free to watch the script work or go away and do something else until it is finished. Alterntely if you have some
+4. Now sit back and wait. Feel free to watch the script work or go away and do something else until it is finished. Alternately if you have some
    ridiculous number of nodes (Yes I am talking to YOU haha) then go away and leave your computer on for a few days to update all of the nodes.
    Note that while the script is running, there are several parts where it may look like nothing is happening for even a few minutes. This is
    often when the script is just waiting for a response from the VPS or from the software/StorX-network etc. Be patient and it should move on.
