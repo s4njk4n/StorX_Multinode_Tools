@@ -74,6 +74,7 @@ in your terminal window to see the current status that each node is showing.
     git clone https://github.com/s4njk4n/StorX_Multinode_Tools.git
     cd StorX_Multinode_Tools
     chmod +x *.sh
+    
 ```
 
 
