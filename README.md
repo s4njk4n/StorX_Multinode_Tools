@@ -1,7 +1,7 @@
 # StorX_Multinode_Tools
 ## Tools for managing multiple StorX nodes
 
----
+
 
 As per StorX, it is important to ensure that both the server OS and the StorX software are up to date on StorX nodes. 
 
@@ -41,13 +41,13 @@ This script will sequentially check and display the status of EVERY node that ha
 
 ---
 
-ITEMS TO NOTE:
+### ITEMS TO NOTE:
 
 * These scripts do not run directly on any of your node VPS's. You will need an additional computer (running Ubuntu 20.04) that these scripts will be installed on (eg. laptop, desktop, virtual machine, VPS).
 
 ---
 
-INITIAL SETUP
+### INITIAL SETUP
 
 1. Logon to (or access the terminal on) the computer you will be using for administering your StorX nodes. You will need to be at the command prompt
    in the terminal in order to perform the following steps.
@@ -69,7 +69,7 @@ INITIAL SETUP
 
 ---
 
-CUSTOMISE THE "ipaddresses" FILE
+### CUSTOMISE THE "ipaddresses" FILE
 
 1. Open the "ipaddresses" file in nano:
 
@@ -91,12 +91,12 @@ CUSTOMISE THE "ipaddresses" FILE
 
 ---
 
-TO SETUP SSH KEY BASED AUTHENTICATION
+### TO SETUP SSH KEY BASED AUTHENTICATION
 
 (Note: You must have setup the "ipaddresses" file in the above section first)
 
 
-GENERATE SSH-KEYS 
+### GENERATE SSH-KEYS 
 
 1. Create your SSH keys that will be used for authentication:
 
@@ -108,7 +108,7 @@ GENERATE SSH-KEYS
    arrive back at your normal command prompt.
 
 
-REGISTER KEYS ON NODES
+### REGISTER KEYS ON NODES
 
 1. Run the set_StorX_SSH_auth.sh script:
 
@@ -126,7 +126,7 @@ REGISTER KEYS ON NODES
 
 ---
 
-TO UPDATE ALL YOUR NODES
+### TO UPDATE ALL YOUR NODES
 
 1. First you need to know how long it takes for your SLOWEST node to reboot. For example, if most of your nodes at one provider can reboot in
    10sec, but you have some nodes at another provider that take 3min to reboot, then you need to know this rough figure as you will be asked
@@ -152,7 +152,7 @@ TO UPDATE ALL YOUR NODES
 
 ---
 
-TO UPDATE A SPECIFIC NODE
+### TO UPDATE A SPECIFIC NODE
 
 1. First you need to know roughly how long it takes to reboot the node you want to update. The script will ask you how many seconds to allow for
    the node to complete rebooting (It gets rebooted as part of the update process).
@@ -178,7 +178,7 @@ TO UPDATE A SPECIFIC NODE
 
 ---
 
-TO CHECK THE STATUS OF ALL YOUR NODES
+### TO CHECK THE STATUS OF ALL YOUR NODES
 
 1. This script will query and show the status of every node with an IP address listed in the "ipaddresses" file you setup earlier above. If not
    done yet, you will need to setup the "ipaddresses" file as per the instructions above first.
