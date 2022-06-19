@@ -19,25 +19,25 @@ WHAT THE SCRIPTS DO:
 
 set_StorX_SSH_auth.sh
 
-This script streamlines the process of setting up SSH-authentication. VPS IP addresses are read from the "ipaddresses" text file that you will setup below. Managing multiple nodes is MUCH easier when using SSH-key authentication to access each VPS. We need SSH-authentication set up in order to use the actual "updating" scripts we're going to use.
+This script streamlines the process of setting up SSH key-based authentication. VPS IP addresses are read from the "ipaddresses" text file that you will setup below. Managing multiple nodes is MUCH easier when using SSH keys to access each VPS. We need SSH key-based authentication set up in order to use the actual "updating" scripts we're going to use.
 
 -----
 
 update_StorX_node_manual.sh
 
-This script updates only ONE node each time you run it. It will ask you at the beginning to enter the IP address of the VPS it should update. Having SSH key based authentication already setup in order to run this script is helpful but not essential.
+This script updates only ONE node each time you run it. It will ask you at the beginning to enter the IP address of the VPS it should update. Having SSH key-based authentication already setup in order to run this script is helpful but not essential.
 
 -----
 
 update_StorX_node_auto.sh
 
-This script sequentially updates EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key based authentication needs to be already setup in order for this script to be useful.
+This script sequentially updates EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key-based authentication needs to be already setup in order for this script to be useful.
 
 -----
 
 check_StorX_node_statuses.sh
 
-This script will sequentially check and display the status of EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key based authentication needs to be already setup in order for this script to be useful. Once finished running, you can scroll up and down in your terminal window to see the current status that each node is showing.
+This script will sequentially check and display the status of EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key-based authentication needs to be already setup in order for this script to be useful. Once finished running, you can scroll up and down in your terminal window to see the current status that each node is showing.
 
 ##############################################################
 
