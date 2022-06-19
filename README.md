@@ -5,11 +5,15 @@
 
 As per StorX, it is important to ensure that both the server OS and the StorX software are up to date on StorX nodes. 
 
-In the event that nodes are not up to date, specific nodes may have their Reputation decreased. Reputation must be maintained above 10 in order to continue being a Staker. WARNING: If your reputation is below 10, do not attempt to Claim tokens from your node or the contract will BURN your tokens and you will lose them.
+In the event that nodes are not up to date, specific nodes may have their Reputation decreased. Reputation must be maintained above 10 in order to
+continue being a Staker. WARNING: If your reputation is below 10, do not attempt to Claim tokens from your node or the contract will BURN your tokens
+and you will lose them.
 
-Keeping all nodes up to date takes time, especially if you have multiple nodes and are dealing with them all one-by-one. These scripts are designed to automate and streamline the process so we can manage larger groups of nodes in an easier and more time-efficient manner.
+Keeping all nodes up to date takes time, especially if you have multiple nodes and are dealing with them all one-by-one. These scripts are designed
+to automate and streamline the process so we can manage larger groups of nodes in an easier and more time-efficient manner.
 
-These tools have been created for the use of myself and a few others. If you plan to use them, please take some time to read through the scripts and understand them.
+These tools have been created for the use of myself and a few others. If you plan to use them, please take some time to read through the scripts and
+understand them.
 
 Also, please do not be afraid of any jargon. The process of using the scripts will be shown below clearly (hopefully).
 
@@ -17,33 +21,38 @@ Also, please do not be afraid of any jargon. The process of using the scripts wi
 
 ### WHAT THE SCRIPTS DO:
 
-set_StorX_SSH_auth.sh
 
-This script streamlines the process of setting up SSH key-based authentication. VPS IP addresses are read from the "ipaddresses" text file that you will setup below. Managing multiple nodes is MUCH easier when using SSH keys to access each VPS. We need SSH key-based authentication set up in order to use the actual "updating" scripts we're going to use.
+_set_StorX_SSH_auth.sh_
 
-_______________
+This script streamlines the process of setting up SSH key-based authentication. VPS IP addresses are read from the "ipaddresses" text file that you
+will setup below. Managing multiple nodes is MUCH easier when using SSH keys to access each VPS. We need SSH key-based authentication set up in order
+to use the actual "updating" scripts we're going to use.
 
-update_StorX_node_manual.sh
 
-This script updates only ONE node each time you run it. It will ask you at the beginning to enter the IP address of the VPS it should update. Having SSH key-based authentication already setup in order to run this script is helpful but not essential.
+_update_StorX_node_manual.sh_
 
-_______________
+This script updates only ONE node each time you run it. It will ask you at the beginning to enter the IP address of the VPS it should update. Having
+SSH key-based authentication already setup in order to run this script is helpful but not essential.
 
-update_StorX_node_auto.sh
 
-This script sequentially updates EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key-based authentication needs to be already setup in order for this script to be useful.
+_update_StorX_node_auto.sh_
 
-_______________
+This script sequentially updates EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key-based
+authentication needs to be already setup in order for this script to be useful.
 
-check_StorX_node_statuses.sh
 
-This script will sequentially check and display the status of EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key-based authentication needs to be already setup in order for this script to be useful. Once finished running, you can scroll up and down in your terminal window to see the current status that each node is showing.
+_check_StorX_node_statuses.sh_
+
+This script will sequentially check and display the status of EVERY node that has its IP address in the "ipaddresses" text file that you will setup
+below. SSH key-based authentication needs to be already setup in order for this script to be useful. Once finished running, you can scroll up and down
+in your terminal window to see the current status that each node is showing.
 
 ---
 
 ### ITEMS TO NOTE:
 
-* These scripts do not run directly on any of your node VPS's. You will need an additional computer (running Ubuntu 20.04) that these scripts will be installed on (eg. laptop, desktop, virtual machine, VPS).
+* These scripts do not run directly on any of your node VPS's. You will need an additional computer (running Ubuntu 20.04) that these scripts will be
+  installed on (eg. laptop, desktop, virtual machine, VPS).
 
 ---
 
@@ -96,7 +105,7 @@ This script will sequentially check and display the status of EVERY node that ha
 (Note: You must have setup the "ipaddresses" file in the above section first)
 
 
-### GENERATE SSH-KEYS 
+#### GENERATE SSH-KEYS 
 
 1. Create your SSH keys that will be used for authentication:
 
@@ -108,7 +117,7 @@ This script will sequentially check and display the status of EVERY node that ha
    arrive back at your normal command prompt.
 
 
-### REGISTER KEYS ON NODES
+#### REGISTER SSH-KEYS ON NODES
 
 1. Run the set_StorX_SSH_auth.sh script:
 
