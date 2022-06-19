@@ -53,6 +53,10 @@ in your terminal window to see the current status that each node is showing.
 
 * These scripts do not run directly on any of your node VPS's. You will need an additional computer (running Ubuntu 20.04) that these scripts will be
   installed on (eg. laptop, desktop, virtual machine, VPS).
+* The computer you setup for these updates should be one YOU control and only YOU have access to. Using SSH key-based authentication means that this
+  administration computer can connect to your nodes whenever it needs to without needing you to manually enter the password for the node VPS. This is
+  by design and is how the scripts manage to run multiple commands to update each node whilst remaining unattended. As you can see, this computer must
+  not be a random public computer. It must be your computer that you control with your own passwords.
 
 ---
 
