@@ -75,7 +75,7 @@ in your terminal window to see the current status that each node is showing.
     cd StorX_Multinode_Tools
     chmod +x *.sh
 ```
-
+   Note: Make sure to press ENTER after pasting the above code into the terminal
 
 #### CUSTOMISE THE "ipaddresses" FILE
 
