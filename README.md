@@ -142,3 +142,15 @@ TO UPDATE A SPECIFIC NODE
 5. Now sit back and wait. Feel free to watch the script work or go away and do something else until it is finished. Note that while the script is running, there are several parts where it may look like nothing is happening for even a few minutes. This is often when the script is just waiting for a response from the VPS or from the software/StorX-network etc. Be patient and it should move on.
 
 ##############################################################
+
+TO CHECK THE STATUS OF ALL YOUR NODES
+
+1. This script will query and show the status of every node with an IP address listed in the "ipaddresses" file you setup earlier above. If not done yet, you will need to do that first.
+
+2. Run the script to check your nodes:
+
+    cd ~/StorX_Multinode_Tools && ./check_StorX_node_statuses.sh
+
+3. Watch while the status of each node is shown sequentially in your terminal window, or alternately go away and come back later when it is finished. You will be able to scroll back up the terminal window later to review them all if there are too many to watch while they are checked one-by-one.
+
+##############################################################
