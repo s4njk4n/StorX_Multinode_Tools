@@ -1,7 +1,7 @@
 # StorX_Multinode_Tools
-Tools for managing multiple StorX nodes
+## Tools for managing multiple StorX nodes
 
-##############################################################
+---
 
 As per StorX, it is important to ensure that both the server OS and the StorX software are up to date on StorX nodes. 
 
@@ -13,39 +13,39 @@ These tools have been created for the use of myself and a few others. If you pla
 
 Also, please do not be afraid of any jargon. The process of using the scripts will be shown below clearly (hopefully).
 
-##############################################################
+---
 
-WHAT THE SCRIPTS DO:
+### WHAT THE SCRIPTS DO:
 
 set_StorX_SSH_auth.sh
 
 This script streamlines the process of setting up SSH key-based authentication. VPS IP addresses are read from the "ipaddresses" text file that you will setup below. Managing multiple nodes is MUCH easier when using SSH keys to access each VPS. We need SSH key-based authentication set up in order to use the actual "updating" scripts we're going to use.
 
------
+_______________
 
 update_StorX_node_manual.sh
 
 This script updates only ONE node each time you run it. It will ask you at the beginning to enter the IP address of the VPS it should update. Having SSH key-based authentication already setup in order to run this script is helpful but not essential.
 
------
+_______________
 
 update_StorX_node_auto.sh
 
 This script sequentially updates EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key-based authentication needs to be already setup in order for this script to be useful.
 
------
+_______________
 
 check_StorX_node_statuses.sh
 
 This script will sequentially check and display the status of EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key-based authentication needs to be already setup in order for this script to be useful. Once finished running, you can scroll up and down in your terminal window to see the current status that each node is showing.
 
-##############################################################
+---
 
 ITEMS TO NOTE:
 
 * These scripts do not run directly on any of your node VPS's. You will need an additional computer (running Ubuntu 20.04) that these scripts will be installed on (eg. laptop, desktop, virtual machine, VPS).
 
-##############################################################
+---
 
 INITIAL SETUP
 
@@ -67,7 +67,7 @@ INITIAL SETUP
     chmod +x *.sh
 ```
 
-##############################################################
+---
 
 CUSTOMISE THE "ipaddresses" FILE
 
@@ -89,7 +89,7 @@ CUSTOMISE THE "ipaddresses" FILE
     Press "ENTER"
 ```
 
-##############################################################
+---
 
 TO SETUP SSH KEY BASED AUTHENTICATION
 
@@ -124,7 +124,7 @@ REGISTER KEYS ON NODES
 
 4. By doing the above steps the script will sequentially access each node and copy your SSH credentials to it.
 
-##############################################################
+---
 
 TO UPDATE ALL YOUR NODES
 
@@ -150,7 +150,7 @@ TO UPDATE ALL YOUR NODES
    Note that while the script is running, there are several parts where it may look like nothing is happening for even a few minutes. This is
    often when the script is just waiting for a response from the VPS or from the software/StorX-network etc. Be patient and it should move on.
 
-##############################################################
+---
 
 TO UPDATE A SPECIFIC NODE
 
@@ -176,7 +176,7 @@ TO UPDATE A SPECIFIC NODE
    running, there are several parts where it may look like nothing is happening for even a few minutes. This is often when the script is just
    waiting for a response from the VPS or from the software/StorX-network etc. Be patient and it should move on.
 
-##############################################################
+---
 
 TO CHECK THE STATUS OF ALL YOUR NODES
 
@@ -192,4 +192,4 @@ TO CHECK THE STATUS OF ALL YOUR NODES
 3. Watch while the status of each node is shown sequentially in your terminal window, or alternately go away and come back later when it is finished.
    You will be able to scroll back up the terminal window later to review them all if there are too many to watch while they are checked one-by-one.
 
-##############################################################
+---
