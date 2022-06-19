@@ -74,7 +74,7 @@ CUSTOMISE THE "ipaddresses" FILE
 
     nano ipaddresses
 
-2. On EACH LINE enter the IP address of only ONE of the nodes you wish to be accessed by the update scripts. There shold be NO SPACES at the start
+2. On EACH LINE enter the IP address of only ONE of the nodes you wish to be accessed by the update scripts. There should be NO SPACES at the start
    or end of each line. Press ENTER at the end of each line after you finishing entering the last digit of the IP address. The exception to this is
    that when you have entered your FINAL IP address you will not press ENTER to create a new line.
 
