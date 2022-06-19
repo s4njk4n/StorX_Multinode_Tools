@@ -90,7 +90,7 @@ in your terminal window to see the current status that each node is showing.
    or end of each line. Press ENTER at the end of each line after you finishing entering the last digit of the IP address. The exception to this is
    that when you have entered your FINAL IP address you will not press ENTER to create a new line.
 
-3. Once all the node IP addresses have been entered, we need to exit and save the file:
+3. Once all the node IP addresses have been entered, we need to exit nano and save the file:
 
 ```
     Press "CTRL+X" 
