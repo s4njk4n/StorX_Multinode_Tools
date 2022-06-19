@@ -145,7 +145,7 @@ TO UPDATE A SPECIFIC NODE
 
 TO CHECK THE STATUS OF ALL YOUR NODES
 
-1. This script will query and show the status of every node with an IP address listed in the "ipaddresses" file you setup earlier above. If not done yet, you will need to do that first.
+1. This script will query and show the status of every node with an IP address listed in the "ipaddresses" file you setup earlier above. If not done yet, you will need to setup the "ipaddresses" file as per the instructions above first.
 
 2. Run the script to check your nodes:
 
