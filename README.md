@@ -73,7 +73,9 @@ CUSTOMISE THE "ipaddresses" FILE
 
 1. Open the "ipaddresses" file in nano:
 
+```
     nano ipaddresses
+```
 
 2. On EACH LINE enter the IP address of only ONE of the nodes you wish to be accessed by the update scripts. There should be NO SPACES at the start
    or end of each line. Press ENTER at the end of each line after you finishing entering the last digit of the IP address. The exception to this is
@@ -81,11 +83,11 @@ CUSTOMISE THE "ipaddresses" FILE
 
 3. Once all the node IP addresses have been entered, we need to exit and save the file:
 
-    Press "CTRL+X"
-    
+```
+    Press "CTRL+X" 
     Press "y"
-    
     Press "ENTER"
+```
 
 ##############################################################
 
@@ -98,7 +100,9 @@ GENERATE SSH-KEYS
 
 1. Create your SSH keys that will be used for authentication:
 
+```
     ssh-keygen
+```
 
 2. You will then be asked several questions to generate the key. Just keep pressing ENTER to accept the default responses. When finished, you'll
    arrive back at your normal command prompt.
@@ -108,7 +112,9 @@ REGISTER KEYS ON NODES
 
 1. Run the set_StorX_SSH_auth.sh script:
 
+```
     cd ~/StorX_Multinode_Tools && ./set_StorX_SSH_auth.sh
+```
 
 2. If this is the first time you are accessing a specific node from your current computer, then when the script tries to access that specific
    node you will receive a message asking you "Are you sure you want to continue connecting". Type yes and press ENTER each time.
@@ -128,7 +134,9 @@ TO UPDATE ALL YOUR NODES
 
 2. Run the update script:
 
+```
     cd ~/StorX_Multinode_Tools && ./update_StorX_node_auto.sh
+```
 
 3. You will be prompted to enter how long the script should wait to allow for your nodes to reboot. If you enter a time that is too short, then
    the update process will fail. If you enter a time that is longer than the time it takes your node VPS to reboot, this is no major problem as
@@ -151,7 +159,9 @@ TO UPDATE A SPECIFIC NODE
 
 2. Run the update script for single nodes:
 
+```
     cd ~/StorX_Multinode_Tools && ./update_StorX_node_manual.sh
+```
 
 3. When asked, enter the IP address of the node you wish to update and press ENTER.
 
@@ -175,7 +185,9 @@ TO CHECK THE STATUS OF ALL YOUR NODES
 
 2. Run the script to check your nodes:
 
+```
     cd ~/StorX_Multinode_Tools && ./check_StorX_node_statuses.sh
+```
 
 3. Watch while the status of each node is shown sequentially in your terminal window, or alternately go away and come back later when it is finished.
    You will be able to scroll back up the terminal window later to review them all if there are too many to watch while they are checked one-by-one.
