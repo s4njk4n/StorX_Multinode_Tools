@@ -83,7 +83,7 @@ in your terminal window to see the current status that each node is showing.
 1. Open the "ipaddresses" file in nano:
 
 ```
-    nano ipaddresses
+    nano ~/StorX_Multinode_Tools/ipaddresses
 ```
 
 2. On EACH LINE enter the IP address of only ONE of the nodes you wish to be accessed by the update scripts. There should be NO SPACES at the start
