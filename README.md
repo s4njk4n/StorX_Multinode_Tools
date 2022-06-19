@@ -60,13 +60,12 @@ INITIAL SETUP
 
 3. Clone the scripts repository:
 
-    cd $HOME
-    
+```
+    cd $HOME    
     git clone https://github.com/s4njk4n/StorX_Multinode_Tools.git
-    
     cd StorX_Multinode_Tools
-    
     chmod +x *.sh
+```
 
 ##############################################################
 
