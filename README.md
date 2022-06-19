@@ -129,7 +129,7 @@ TO UPDATE ALL YOUR NODES
 
 TO UPDATE A SPECIFIC NODE
 
-1. First you need to know how long it takes for the indicated node to reboot. You will be asked for it when you run the update script.
+1. First you need to know roughly how long it takes to reboot the node you want to update. The script will ask you how many seconds to allow for the node to complete rebooting (It gets rebooted as part of the update process).
 
 2. Run the update script for single nodes:
 
