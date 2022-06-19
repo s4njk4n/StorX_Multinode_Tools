@@ -98,7 +98,7 @@ in your terminal window to see the current status that each node is showing.
 ```
 
 
-#### TO SETUP SSH KEY-BASED AUTHENTICATION
+#### SETUP SSH KEY-BASED AUTHENTICATION
 
 (Note: You must have setup the "ipaddresses" file in the above section first)
 
