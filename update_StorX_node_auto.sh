@@ -37,9 +37,18 @@ do
    echo -e "${GREEN}Deactivating StorX Node - $line ${NC}"
    ssh -n root@$line 'cd StorX-Node && sudo docker-compose -f docker-services.yml down'
 
+   # This section below was neccessary to separate into individual one-line commands and to run TWICE
+   # in order for certain VPS providers to work properly
    echo
    echo -e "${GREEN}Updating VPS OS & Packages - $line ${NC}"
-   ssh -n root@$line 'sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y'
+   ssh -n root@$line 'sudo apt update -y'
+   ssh -n root@$line 'sudo apt upgrade -y'
+   ssh -n root@$line 'sudo apt autoremove -y'
+   ssh -n root@$line 'sudo apt clean -y'
+   ssh -n root@$line 'sudo apt update -y'
+   ssh -n root@$line 'sudo apt upgrade -y'
+   ssh -n root@$line 'sudo apt autoremove -y'
+   ssh -n root@$line 'sudo apt clean -y'
 
    echo
    echo -e "${GREEN}Rebooting VPS - $line ${NC}"
