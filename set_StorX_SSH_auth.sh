@@ -21,10 +21,7 @@ echo -e "${GREEN}#################################################### ${NC}"
 echo
 echo
 
-echo -e "${RED}During this setup process you will be asked this many times: ${NC}"
-echo -e "${RED}    - Are you sure you want to continue connecting ${NC}"
-echo -e "${RED}Whenever you get this prompt, just type yes and press enter. ${NC}"
-echo
+
 echo -e "${RED}Whenever asked for the password for root@ip.address just enter ${NC}"
 echo -e "${RED}the correct password for that VPS and press the enter key. ${NC}"
 echo
