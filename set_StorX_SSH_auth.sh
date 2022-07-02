@@ -35,7 +35,7 @@ do
    echo
    echo -e "${GREEN}Setting up SSH-key based authentication for $line ${NC}"
    echo
-   ssh-copy-id root@$line
+   ssh-copy-id -o "StrictHostKeyChecking=no" root@$line
    echo
 
 done < "$FILE"
