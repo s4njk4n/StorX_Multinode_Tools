@@ -22,8 +22,8 @@ echo
 echo
 
 
-echo -e "${RED}Whenever asked for the password for root@ip.address just enter ${NC}"
-echo -e "${RED}the correct password for that VPS and press the enter key. ${NC}"
+echo -e "${RED}Whenever asked for the password for root@ip.address just type ${NC}"
+echo -e "${RED}the correct password for that VPS and press the ENTER key. ${NC}"
 echo
 
 while IFS= read line
