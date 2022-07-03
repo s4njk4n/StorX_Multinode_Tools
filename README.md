@@ -24,7 +24,7 @@ Also, please do not be afraid of any jargon. The process of using the scripts wi
 
 _set_StorX_SSH_auth.sh_
 
-This script streamlines the process of setting up SSH key-based authentication. VPS IP addresses are read from the "ipaddresses" text file that you
+This script streamlines the process of setting up SSH key-based authentication. VPS IP addresses are read from the "ip_addresses" text file that you
 will setup below. Managing multiple nodes is MUCH easier when using SSH keys to access each VPS. We need SSH key-based authentication set up in order
 to use the actual "updating" scripts we're going to use.
 
@@ -37,13 +37,13 @@ SSH key-based authentication already setup in order to run this script is helpfu
 
 _update_StorX_node_auto.sh_
 
-This script sequentially updates EVERY node that has its IP address in the "ipaddresses" text file that you will setup below. SSH key-based
+This script sequentially updates EVERY node that has its IP address in the "ip_addresses" text file that you will setup below. SSH key-based
 authentication needs to be already setup in order for this script to be useful.
 
 
 _check_StorX_node_statuses.sh_
 
-This script will sequentially check and display the status of EVERY node that has its IP address in the "ipaddresses" text file that you will setup
+This script will sequentially check and display the status of EVERY node that has its IP address in the "ip_addresses" text file that you will setup
 below. SSH key-based authentication needs to be already setup in order for this script to be useful. Once finished running, you can scroll up and down
 in your terminal window to see the current status that each node is showing.
 
@@ -82,12 +82,12 @@ in your terminal window to see the current status that each node is showing.
 4. Make sure to press ENTER after pasting the above code into the terminal
 
 
-#### CUSTOMISE THE "ipaddresses" FILE
+#### CUSTOMISE THE "ip_addresses" FILE
 
-1. Open the "ipaddresses" file in nano:
+1. Open the "ip_addresses" file in nano:
 
 ```
-    nano ~/StorX_Multinode_Tools/ipaddresses
+    nano ~/StorX_Multinode_Tools/ip_addresses
 ```
 
 2. On EACH LINE enter the IP address of only ONE of the nodes you wish to be accessed by the update scripts. There should be NO SPACES at the start
@@ -105,7 +105,7 @@ in your terminal window to see the current status that each node is showing.
 
 #### SETUP SSH KEY-BASED AUTHENTICATION
 
-(Note: You must have setup the "ipaddresses" file in the above section first)
+(Note: You must have setup the "ip_addresses" file in the above section first)
 
 
 ##### GENERATE SSH-KEYS 
@@ -194,8 +194,8 @@ If you have already generated SSH keys earlier (if you're also using and have al
 
 ### TO CHECK THE STATUS OF ALL YOUR NODES
 
-1. This script will query and show the status of every node with an IP address listed in the "ipaddresses" file you setup earlier above. If not
-   done yet, you will need to setup the "ipaddresses" file as per the instructions above first.
+1. This script will query and show the status of every node with an IP address listed in the "ip_addresses" file you setup earlier above. If not
+   done yet, you will need to setup the "ip_addresses" file as per the instructions above first.
 
 2. Run the script to check your nodes:
 
