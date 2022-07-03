@@ -71,12 +71,15 @@ in your terminal window to see the current status that each node is showing.
     sudo apt update -y && sudo apt upgrade -y && sudo apt install -y git ssh && sudo apt autoremove -y
 ```
 
-3. Clone the scripts repository:
+3. Clone the scripts repository (Note: Preserves any preexisting ip_addresses file in local git repo):
 
 ```
-    cd $HOME    
+    cd $HOME
+    mv StorX_Multinode_Tools/ip_addresses . > /dev/null 2>&1
+    sudo rm -r StorX_Multinode_Tools > /dev/null 2>&1
     git clone https://github.com/s4njk4n/StorX_Multinode_Tools.git
     cd StorX_Multinode_Tools
+    mv ~/ip_addresses . > /dev/null 2>&1
     chmod +x *.sh
 ```
 4. Make sure to press ENTER after pasting the above code into the terminal
