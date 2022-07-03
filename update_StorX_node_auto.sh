@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set filename to obtain IP address list for StorX Node VPS's to Update
-FILE="ipaddresses"
+FILE="ip_addresses"
 
 # Set Colour Vars
 GREEN='\033[0;32m'
