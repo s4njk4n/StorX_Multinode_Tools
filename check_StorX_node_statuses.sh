@@ -15,7 +15,7 @@ echo -e "${GREEN}     #                                                  # ${NC}
 echo -e "${GREEN}     #               NODE STATUS CHECKER                # ${NC}"
 echo -e "${GREEN}     #             FOR MULTIPLE STORX NODES             # ${NC}"
 echo -e "${GREEN}     #                                                  # ${NC}"
-echo -e "${GREEN}     # Created by s4njk4n - https://github.com/s4njk4n/ #${NC}"
+echo -e "${GREEN}     # Created by s4njk4n - https://github.com/s4njk4n/ # ${NC}"
 echo -e "${GREEN}     #                                                  # ${NC}"
 echo -e "${GREEN}     #################################################### ${NC}"
 echo
