@@ -33,7 +33,15 @@ ssh root@$vpsIP 'cd StorX-Node && sudo docker-compose -f docker-services.yml dow
 
 echo
 echo -e "${GREEN}Updating VPS OS & Packages - $vpsIP ${NC}"
-ssh root@$vpsIP 'sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y'
+# Quirks of certain VPS providers require us to run the commands below twice on separate lines
+ssh -n root@$vpsIP 'apt update -y'
+ssh -n root@$vpsIP 'apt upgrade -y'
+ssh -n root@$vpsIP 'apt autoremove -y'
+ssh -n root@$vpsIP 'apt clean -y'
+ssh -n root@$vpsIP 'apt update -y'
+ssh -n root@$vpsIP 'apt upgrade -y'
+ssh -n root@$vpsIP 'apt autoremove -y'
+ssh -n root@$vpsIP 'apt clean -y'
 
 echo
 echo -e "${GREEN}Rebooting VPS - $vpsIP ${NC}"
@@ -62,5 +70,4 @@ ssh root@$vpsIP 'sudo docker exec storx-node_storxnetwork_1 xcore status'
 
 echo
 echo -e "${GREEN}Congratulations! Your StorX Node at $vpsIP has now been updated ${NC}"
-
 
