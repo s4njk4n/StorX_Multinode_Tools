@@ -41,14 +41,14 @@ do
    # in order for certain VPS providers to work properly
    echo
    echo -e "${GREEN}Updating VPS OS & Packages - $line ${NC}"
-   ssh -n root@$line 'sudo apt update -y'
-   ssh -n root@$line 'sudo apt upgrade -y'
-   ssh -n root@$line 'sudo apt autoremove -y'
-   ssh -n root@$line 'sudo apt clean -y'
-   ssh -n root@$line 'sudo apt update -y'
-   ssh -n root@$line 'sudo apt upgrade -y'
-   ssh -n root@$line 'sudo apt autoremove -y'
-   ssh -n root@$line 'sudo apt clean -y'
+   ssh -n root@$line 'apt update -y'
+   ssh -n root@$line 'apt upgrade -y'
+   ssh -n root@$line 'apt autoremove -y'
+   ssh -n root@$line 'apt clean -y'
+   ssh -n root@$line 'apt update -y'
+   ssh -n root@$line 'apt upgrade -y'
+   ssh -n root@$line 'apt autoremove -y'
+   ssh -n root@$line 'apt clean -y'
 
    echo
    echo -e "${GREEN}Rebooting VPS - $line ${NC}"
