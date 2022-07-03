@@ -7,14 +7,14 @@ NC='\033[0m' # No Color
 
 echo
 echo
-echo -e "${GREEN}#################################################### ${NC}"
-echo -e "${GREEN}#                                                  # ${NC}"
-echo -e "${GREEN}#                 MANUAL UPDATER                   # ${NC}"
-echo -e "${GREEN}#             FOR A SINGLE STORX NODE              # ${NC}"
-echo -e "${GREEN}#                                                  # ${NC}"
-echo -e "${GREEN}# Created by s4njk4n - https://github.com/s4njk4n/ #${NC}"
-echo -e "${GREEN}#                                                  # ${NC}"
-echo -e "${GREEN}#################################################### ${NC}"
+echo -e "${GREEN}     #################################################### ${NC}"
+echo -e "${GREEN}     #                                                  # ${NC}"
+echo -e "${GREEN}     #                 MANUAL UPDATER                   # ${NC}"
+echo -e "${GREEN}     #             FOR A SINGLE STORX NODE              # ${NC}"
+echo -e "${GREEN}     #                                                  # ${NC}"
+echo -e "${GREEN}     # Created by s4njk4n - https://github.com/s4njk4n/ # ${NC}"
+echo -e "${GREEN}     #                                                  # ${NC}"
+echo -e "${GREEN}     #################################################### ${NC}"
 echo
 echo
 
