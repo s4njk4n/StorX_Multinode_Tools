@@ -195,6 +195,29 @@ If you have already generated SSH keys earlier (if you're also using and have al
 
 ---
 
+### TO UPDATE ONLY THE OPERATING SYSTEM AND THEN REBOOT ALL YOUR VPS's
+
+1. First you need to know roughly how long it takes to reboot the node you want to update. The script will ask you how many seconds to allow for
+   the node to complete rebooting (It gets rebooted as part of the update process).
+
+2. Run the OS-updating script:
+
+```
+    cd ~/StorX_Multinode_Tools && ./update_StorX_OSonly_and_reboot_auto.sh
+```
+
+3. You will be prompted to enter how long the script should wait to allow for your nodes to reboot. If you enter a time that is too short, then
+   the update process will fail. If you enter a time that is longer than the time it takes your node VPS to reboot, this is no major problem as
+   it will just mean that the update process will just take a little longer. The time you enter should just be the number of seconds to wait. 
+   For example, to wait 60sec, one would just type 60 and press ENTER. Be aware that some commercial VPS providers have reboot times that are
+   VERY SLOOOOOOW. If you're not sure how long it takes for yours or if you want to be on the safe side then just pick something long like
+   300 seconds (ie. type 300 and press ENTER)
+
+4. All of your VPS's that have their IP addresses listed in the "ip_addresses" file will now sequentially have their operating system updated followed
+   by a system reboot and then a status check to show the node is online and connected to the StorX network.
+
+---
+
 ### TO CHECK THE STATUS OF ALL YOUR NODES
 
 1. This script will query and show the status of every node with an IP address listed in the "ip_addresses" file you setup earlier above. If not
