@@ -32,13 +32,14 @@ to use the actual "updating" scripts we're going to use.
 _update_StorX_node_manual.sh_
 
 This script updates only ONE node each time you run it. It will ask you at the beginning to enter the IP address of the VPS it should update. Having
-SSH key-based authentication already setup in order to run this script is helpful but not essential.
+SSH key-based authentication already setup in order to run this script is helpful but not essential. Node reputation will be reset to 27 (as of time
+of writing this).
 
 
 _update_StorX_node_auto.sh_
 
 This script sequentially updates EVERY node that has its IP address in the "ip_addresses" text file that you will setup below. SSH key-based
-authentication needs to be already setup in order for this script to be useful.
+authentication needs to be already setup in order for this script to be useful. Node reputations will be reset to 27 (as of time of writing this).
 
 
 _update_StorX_OSonly_and_reboot_auto.sh_
@@ -46,7 +47,8 @@ _update_StorX_OSonly_and_reboot_auto.sh_
 This script sequqentially updates ONLY THE OPERATING SYSTEM on EVERY node that has its IP address in the "ip_addresses" text file that you will setup
 below. After updating the OS, it then reboots the VPS and finally does a "getstatus" so the user can see that the StorX node on that VPS is back
 online and connected to the StorX network post the update and reboot. It then moves on to the next VPS and performs the same procedure. SSH key-based
-authentication needs to be already setup in order for this script to be useful.
+authentication needs to be already setup in order for this script to be useful. Node reputation remains UNCHANGED with this script (as per testing
+findings so far).
 
 
 _check_StorX_node_statuses.sh_
