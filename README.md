@@ -41,6 +41,14 @@ This script sequentially updates EVERY node that has its IP address in the "ip_a
 authentication needs to be already setup in order for this script to be useful.
 
 
+_update_StorX_OSonly_and_reboot_auto.sh_
+
+This script sequqentially updates ONLY THE OPERATING SYSTEM on EVERY node that has its IP address in the "ip_addresses" text file that you will setup
+below. After updating the OS, it then reboots the VPS and finally does a "getstatus" so the user can see that the StorX node on that VPS is back
+online and connected to the StorX network post the update and reboot. It then moves on to the next VPS and performs the same procedure. SSH key-based
+authentication needs to be already setup in order for this script to be useful.
+
+
 _check_StorX_node_statuses.sh_
 
 This script will sequentially check and display the status of EVERY node that has its IP address in the "ip_addresses" text file that you will setup
