@@ -111,7 +111,7 @@ command shown here in Step 2):
 2. On EACH LINE enter the IP address of only ONE of the nodes you wish to be accessed by the update scripts. There should be NO SPACES before the ip
    address on any line. (The first character of each line should be the first digit of the ip address you are putting on that line). Press ENTER at the
    end of each line after you finishing entering the last digit of the IP address. The exception to this is that when you have entered your FINAL IP
-   address you will not press ENTER to create a new line at the end of the file.
+   address you will NOT press ENTER to create a new line at the end of the file.
 
 3. Once all the node IP addresses have been entered, we need to exit nano and save the file:
 
