@@ -86,7 +86,7 @@ command shown here in Step 2):
     sudo apt update -y && sudo apt upgrade -y && sudo apt install -y git ssh && sudo apt autoremove -y
 ```
 
-3. Clone the scripts repository (Note: Preserves any preexisting ip_addresses file in local git repo):
+3. Clone the scripts repository (Note: Preserves any preexisting ip_addresses file in local git repo. All other files will be deleted):
 
 ```
     cd $HOME
