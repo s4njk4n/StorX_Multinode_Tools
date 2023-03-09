@@ -29,36 +29,36 @@ read WAITTOREBOOT
 
 echo
 echo -e "${GREEN}Deactivating StorX Node - $vpsIP ${NC}"
-ssh root@$vpsIP 'cd StorX-Node && sudo docker-compose -f docker-services.yml down'
+ssh -p 22 root@$vpsIP 'cd StorX-Node && sudo docker-compose -f docker-services.yml down'
 
 echo
 echo -e "${GREEN}Updating VPS OS & Packages - $vpsIP ${NC}"
 # Quirks of certain VPS providers require us to run the commands below twice on separate lines
-ssh -n root@$vpsIP 'apt update -y'
-ssh -n root@$vpsIP 'apt upgrade -y'
-ssh -n root@$vpsIP 'apt autoremove -y'
-ssh -n root@$vpsIP 'apt clean -y'
-ssh -n root@$vpsIP 'apt update -y'
-ssh -n root@$vpsIP 'apt upgrade -y'
-ssh -n root@$vpsIP 'apt autoremove -y'
-ssh -n root@$vpsIP 'apt clean -y'
+ssh -n -p 22 root@$vpsIP 'apt update -y'
+ssh -n -p 22 root@$vpsIP 'apt upgrade -y'
+ssh -n -p 22 root@$vpsIP 'apt autoremove -y'
+ssh -n -p 22 root@$vpsIP 'apt clean -y'
+ssh -n -p 22 root@$vpsIP 'apt update -y'
+ssh -n -p 22 root@$vpsIP 'apt upgrade -y'
+ssh -n -p 22 root@$vpsIP 'apt autoremove -y'
+ssh -n -p 22 root@$vpsIP 'apt clean -y'
 
 echo
 echo -e "${GREEN}Rebooting VPS - $vpsIP ${NC}"
-ssh root@$vpsIP 'reboot' > /dev/null 2>&1
+ssh -p 22 root@$vpsIP 'reboot' > /dev/null 2>&1
 sleep $WAITTOREBOOT
 
 echo
 echo -e "${GREEN}Upgrading StorX Network Configuration Scripts - $vpsIP ${NC}"
-ssh root@$vpsIP 'cd StorX-Node && git pull'
+ssh -p 22 root@$vpsIP 'cd StorX-Node && git pull'
 
 echo
 echo -e "${GREEN}Upgrading StorX Node Docker Images - $vpsIP ${NC}"
-ssh root@$vpsIP 'cd StorX-Node && sudo docker pull storxnetwork/storxnode:latest'
+ssh -p 22 root@$vpsIP 'cd StorX-Node && sudo docker pull storxnetwork/storxnode:latest'
 
 echo
 echo -e "${GREEN}Restarting StorX Node - $vpsIP ${NC}"
-ssh root@$vpsIP 'cd StorX-Node && sudo docker-compose -f docker-services.yml up -d'
+ssh -p 22 root@$vpsIP 'cd StorX-Node && sudo docker-compose -f docker-services.yml up -d'
 
 echo
 echo -e "${GREEN}Allowing time for daemon to connect - $vpsIP ${NC}"
@@ -66,7 +66,7 @@ sleep 1m # waits 1minute to allow deamon to run otherwise getting status in next
 
 echo
 echo -e "${GREEN}Getting Status of Updated Node - $vpsIP ${NC}"
-ssh root@$vpsIP 'sudo docker exec storx-node_storxnetwork_1 xcore status'
+ssh -p 22 root@$vpsIP 'sudo docker exec storx-node_storxnetwork_1 xcore status'
 
 echo
 echo -e "${GREEN}Congratulations! Your StorX Node at $vpsIP has now been updated ${NC}"
