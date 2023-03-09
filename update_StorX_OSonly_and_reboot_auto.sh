@@ -37,18 +37,18 @@ do
    # in order for certain VPS providers to work properly
    echo
    echo -e "${GREEN}Updating VPS OS & Packages - $line ${NC}"
-   ssh -n root@$line 'apt update -y'
-   ssh -n root@$line 'apt upgrade -y'
-   ssh -n root@$line 'apt autoremove -y'
-   ssh -n root@$line 'apt clean -y'
-   ssh -n root@$line 'apt update -y'
-   ssh -n root@$line 'apt upgrade -y'
-   ssh -n root@$line 'apt autoremove -y'
-   ssh -n root@$line 'apt clean -y'
+   ssh -n -p 22 root@$line 'apt update -y'
+   ssh -n -p 22 root@$line 'apt upgrade -y'
+   ssh -n -p 22 root@$line 'apt autoremove -y'
+   ssh -n -p 22 root@$line 'apt clean -y'
+   ssh -n -p 22 root@$line 'apt update -y'
+   ssh -n -p 22 root@$line 'apt upgrade -y'
+   ssh -n -p 22 root@$line 'apt autoremove -y'
+   ssh -n -p 22 root@$line 'apt clean -y'
    echo
 
    echo -e "${GREEN}Rebooting VPS - $line ${NC}"
-   ssh -n root@$line 'reboot' > /dev/null 2>&1
+   ssh -n -p 22 root@$line 'reboot' > /dev/null 2>&1
    sleep $WAITTOREBOOT
    echo
 
@@ -57,7 +57,7 @@ do
    echo
 
    echo -e "${GREEN}Getting Status of Node After Updating OS and Rebooting - $line ${NC}"
-   ssh -n root@$line 'sudo docker exec storx-node_storxnetwork_1 xcore status'
+   ssh -n -p 22 root@$line 'sudo docker exec storx-node_storxnetwork_1 xcore status'
    echo
 
    echo -e "${GREEN}Congratulations! Your StorX VPS OS at $line has now been updated ${NC}"
