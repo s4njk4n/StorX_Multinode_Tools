@@ -28,7 +28,7 @@ do
    echo
    echo -e "${GREEN}Retrieving Status of StorX Node - $line ${NC}"
    echo
-   ssh -n root@$line 'sudo docker exec storx-node_storxnetwork_1 xcore status'
+   ssh -n -p 22 root@$line 'sudo docker exec storx-node_storxnetwork_1 xcore status'
 
 done < "$FILE"
 
