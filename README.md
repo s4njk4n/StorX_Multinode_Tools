@@ -6,8 +6,7 @@
 As per StorX, it is important to ensure that both the server OS and the StorX software are up to date on StorX nodes. 
 
 In the event that nodes are not up to date, specific nodes may have their Reputation decreased. Reputation must be maintained above 10 in order to
-continue being a Staker. WARNING: If your reputation is below 10, do not attempt to Claim tokens from your node or the contract will BURN your tokens
-and you will lose them.
+continue being a Staker.
 
 Keeping all nodes up to date takes time, especially if you have multiple nodes and are dealing with them all one-by-one. These scripts are designed
 to automate and streamline the process so we can manage larger groups of nodes in an easier and more time-efficient manner.
